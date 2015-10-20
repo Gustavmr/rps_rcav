@@ -1,0 +1,30 @@
+
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-2">
+          <div class="panel panel-success">
+            <div class="panel-heading text-center">Paper</div>
+            <div class="panel-body">
+            <img src="http://localhost:3000/assets/images/paper.png" width=100%>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="panel panel-danger">
+            <div class="panel-heading text-center"><%= @complay %></div>
+            <div class="panel-body">
+            <img src="http://localhost:3000/assets/images/<%= @complay %>.png" width=100%>            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="well well-lg text-center">
+             <h3><span class="label label-<%= @color %>"><%= @result %></span></h3>
+            </div>
+        </div>
+    </div>
+
+
+

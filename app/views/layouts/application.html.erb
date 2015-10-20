@@ -5,10 +5,42 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+
+  <!-- Connect to Bootstrap CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
 </head>
 <body>
+  <p></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <table class="table">
+          <tr>
+            <td>
+              <div class="col-sm-8 col-sm-offset-2">
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                  <a href="/rock" class="btn btn-block btn-primary">Play Rock</a>
+                  <a href="/paper" class="btn btn-block btn-info">Play Paper</a>
+                  <a href="/scissors" class="btn btn-block btn-primary">Play Scissors</a>
+                </div>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr><td></td></tr>
+      </table>
+    </div>
+  </div>
+  <%= yield %>
 
-<%= yield %>
+</div>
+
+
+
+
+
+
 
 </body>
 </html>
